@@ -32,7 +32,7 @@ class Config
     public static function getDb()
     {
         if(! self::$instance){
-            self::$instance = new Connection(self::$host, self::$port, self::$user, self::$pass, self::$db);
+            self::$instance = new Connection(self::$host, self::$port, self::$user, self::$pass, self::$db, 'utf8');
         }
 
         return self::$instance;
