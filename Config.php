@@ -23,6 +23,8 @@ class Config
     public static $key = 'ceshiworkerman';
 
 
+
+
     /**
      *  mysql实例化
      * @return null|Connection
