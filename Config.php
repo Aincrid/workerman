@@ -14,7 +14,7 @@ class Config
     // mysql 配置
     public static $instance = null;
 
-    private static $host = 'localhost';
+    private static $host = '127.0.0.1';
     private static $port = '3306';
     private static $user = 'tao';
     private static $pass = 'tao';
