@@ -13,6 +13,8 @@ $wsWorker -> count = 4;
 $wsWorker -> onWorkerStart = function($wsWorker){
     global $db;
     $db = Config::getDb();
+    echo '<pre>';
+    var_dump($db);
 
 //    Timer::add(1, function()use($wsWorker){
 //        $time_now = time();
