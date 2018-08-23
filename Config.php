@@ -14,11 +14,11 @@ class Config
     // mysql 配置
     public static $instance = null;
 
-    private static $host = '';
-    private static $port = '';
-    private static $user = '';
-    private static $pass = '';
-    private static $db = '';
+    private static $host = 'localhost';
+    private static $port = '3306';
+    private static $user = 'tao';
+    private static $pass = 'tao';
+    private static $db = 'workerman';
 
     public static $key = 'ceshiworkerman';
 
