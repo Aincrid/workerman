@@ -1,7 +1,8 @@
 /**
  *  im初始化
  */
-define(function(){
+
+define(['base', 'md5'], function(base, md5){
 
     // 聊天界面初始化
     var imInit = function(){
@@ -64,7 +65,7 @@ define(function(){
         sendData.action = number;
         sendData.data = data;
 
-        var sign = hex_md5(data+common.key);
+        var sign = hex_md5(data+base.key);
 
         sendData.sign = sign;
 

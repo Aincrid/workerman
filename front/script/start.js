@@ -11,10 +11,10 @@ require.config({
         "layui":"../lib/layui/layui",
         "im":"./im",
         "md5":"../lib/md5",
-        "common":"./common"
+        "common":"./base"
     }
 });
 
-require(['common','layui', 'md5', 'im' ], function(common, layui,  md5, im){
+require(['base','layui', 'md5', 'im' ], function(base, layui,  md5, im){
     im.imInit();
 });
