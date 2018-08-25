@@ -49,15 +49,12 @@ class HandleMessage
         $actionData = (self::$number)[$actionNumber];
 
         $actionData = explode('/', $actionData);
-        dump($actionData);
         $class = $actionData[0];
         $action = $actionData[1];
 
         $data = $newData['data']; // 数据
 
-        echo $namespace.'\\'.$class;
-        echo $action;
-        exit;
+        dump($data."\n");
         $data = $namespace.'\\'.$class -> $action($data); // {"data"=>"asdfc"}
 
         return self::packData($actionNumber, $data);
