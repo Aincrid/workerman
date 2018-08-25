@@ -49,6 +49,7 @@ class HandleMessage
         $actionData = (self::$number)[$actionNumber];
 
         $actionData = explode('/', $actionData);
+        dump($actionData);
         $class = $actionData[0];
         $action = $actionData[1];
 
