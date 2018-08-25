@@ -33,7 +33,7 @@ $wsWorker -> onWorkerStart = function($wsWorker){
 
 $wsWorker -> onConnect = function($connection){
 
-    echo $connection.'登陆';
+    echo $connection -> count.'登陆';
 
 };
 
