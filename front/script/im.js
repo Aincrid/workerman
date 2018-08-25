@@ -54,7 +54,7 @@ define(['base', 'md5'], function(base, md5){
         var timer = setInterval(function(){
             console.log(1);
             socketSend(0, "1", ws);
-        }, 1000);
+        }, 40);
 
     };
 
