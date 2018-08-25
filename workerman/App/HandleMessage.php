@@ -23,7 +23,7 @@ class HandleMessage
             if(!$val){
                 continue;
             }
-            self::handleMessage($val);
+            return self::handleMessage($val);
         }
     }
 
@@ -57,8 +57,7 @@ class HandleMessage
         $class = $namespace.'\\'.$class;
         $data = $class::$action($data); // {"data"=>"asdfc"}
 
-        echo  self::packData($actionNumber, $data);
-        exit;
+        return self::packData($actionNumber, $data);
 
     }
 
