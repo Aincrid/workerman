@@ -17,7 +17,7 @@ class Logic
     /**
      * @return string  {"data"=>"asdfc"}
      */
-    public function heartBeat(){
+    public static function heartBeat(){
         echo 'heartBeat';
         return json_encode(array('data'=>''));
     }
