@@ -6,13 +6,7 @@
  * Time: 21:09
  */
 
-namespace Workerman;
-
-
-class Common
-{
-    public static function dump($data){
-        echo '</pre>';
-        var_dump($data);
-    }
+function dump($data){
+    echo '</pre>';
+    var_dump($data);
 }

@@ -5,7 +5,6 @@ use Workerman\Worker;
 use Workerman\App\HandleMessage;
 use Workerman\Config;
 use Workerman\Lib\Timer;
-use Workerman\Common;
 
 $wsWorker = new Worker('websocket://0.0.0.0:2000');
 
@@ -41,7 +40,7 @@ $wsWorker -> onConnect = function($connection){
 $wsWorker -> onMessage = function($connection, $data){
     $connection->lastMessageTime = time();
 
-    Common::dump($data);
+    dump($data);
     $res = HandleMessage::getData($data);
 
     $connection -> send($res);
