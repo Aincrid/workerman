@@ -28,17 +28,18 @@ define(function(){
         // 0001{"number":1234, "data":"{a:b}", "sign":"abcded"}
 
         ws.onMessage = function(data){
-            data = data.slice(0, 5);
-            data = JSON.parse(data); // {"action":1234, "data":"{a:b}", "sign":"abcded"}
-            var number = data.action;
-            // 验签
-            var dataSign = data.sign;
-            if(checkSign(data.data, dataSign)){
-                data = JSON.parse(data.data);
-                console.log(data);
-            }else{
-                socketSend(number, {"msg":"验签失败"});
-            }
+            console.log(data);
+            // data = data.slice(0, 5);
+            // data = JSON.parse(data); // {"action":1234, "data":"{a:b}", "sign":"abcded"}
+            // var number = data.action;
+            // // 验签
+            // var dataSign = data.sign;
+            // if(checkSign(data.data, dataSign)){
+            //     data = JSON.parse(data.data);
+            //     console.log(data);
+            // }else{
+            //     socketSend(number, {"msg":"验签失败"});
+            // }
         };
 
         ws.onError = function(){

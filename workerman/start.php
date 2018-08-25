@@ -38,12 +38,12 @@ $wsWorker -> onConnect = function($connection){
 };
 
 $wsWorker -> onMessage = function($connection, $data){
-    $connection->lastMessageTime = time();
+//    $connection->lastMessageTime = time();
+//
+//    dump($data);
+//    $res = HandleMessage::getData($data);
 
-    dump($data);
-    $res = HandleMessage::getData($data);
-
-    $connection -> send($res);
+    $connection -> send('a');
 };
 
 $wsWorker -> onClose = function($connection){
