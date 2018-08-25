@@ -38,6 +38,7 @@ $wsWorker -> onConnect = function($connection){
 
 };
 
+
 $wsWorker -> onMessage = function($connection, $data){
 //    $connection->lastMessageTime = time();
 //
@@ -45,6 +46,10 @@ $wsWorker -> onMessage = function($connection, $data){
 //    $res = HandleMessage::getData($data);
 
     $connection -> send('a');
+};
+
+$wsWorker -> onError = function($connection, $code, $msg){
+    echo 'errorCode:'.$code.$msg;
 };
 
 $wsWorker -> onClose = function($connection){
