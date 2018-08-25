@@ -50,6 +50,7 @@ define(['base', 'md5'], function(base, md5){
 
         // 心跳
         var timer = setInterval(function(){
+            console.log(1);
             socketSend(0, "", ws)
         }, 3000);
 
@@ -69,7 +70,7 @@ define(['base', 'md5'], function(base, md5){
 
         sendData.sign = sign;
 
-        return sendData+'_^+^_';
+       ws.send(sendData+'_^+^_');
 
     };
 
