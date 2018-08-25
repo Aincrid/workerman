@@ -31,7 +31,7 @@ $wsWorker -> onWorkerStart = function($wsWorker){
     });
 };
 
-$wsWorker -> onConnect = function($connection, $data){
+$wsWorker -> onConnect = function($connection){
 
     echo $connection.'登陆';
 
