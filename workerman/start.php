@@ -18,7 +18,6 @@ $wsWorker -> onWorkerStart = function($wsWorker){
 
     Timer::add(1, function()use($wsWorker){
         $time_now = time();
-        echo date('Y-m-d H:i:s', $time_now)."\n";
         foreach($wsWorker->connections as $connection) {
             // 有可能该connection还没收到过消息，则lastMessageTime设置为当前时间
             if (empty($connection->lastMessageTime)) {
@@ -27,7 +26,6 @@ $wsWorker -> onWorkerStart = function($wsWorker){
             }
             // 上次通讯时间间隔大于心跳间隔，则认为客户端已经下线，关闭连接
             if ($time_now - $connection->lastMessageTime > 55) {
-                echo $time_now - $connection->lastMessageTime."\n";
                 $connection->close();
             }
         }
@@ -44,10 +42,9 @@ $wsWorker -> onConnect = function($connection){
 $wsWorker -> onMessage = function($connection, $data){
     $connection->lastMessageTime = time();
 
-    dump($data);
-//    $res = HandleMessage::getData($data);
+    $res = HandleMessage::getData($data);
 
-    $connection -> send('a');
+    $connection -> send($res);
 };
 
 $wsWorker -> onError = function($connection, $code, $msg){
