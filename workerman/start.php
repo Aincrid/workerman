@@ -42,8 +42,8 @@ $wsWorker -> onConnect = function($connection){
 
 
 $wsWorker -> onMessage = function($connection, $data){
-//    $connection->lastMessageTime = time();
-//
+    $connection->lastMessageTime = time();
+
     dump($data);
 //    $res = HandleMessage::getData($data);
 

@@ -44,8 +44,8 @@
       <file leaf-file-name="start.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/workerman/start.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+            <state relative-caret-position="186">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="e#95#116#0#PHP" expanded="true" />
               </folding>
@@ -205,12 +205,12 @@
       <option name="presentableId" value="Default" />
       <updated>1535158038973</updated>
       <workItem from="1535158040460" duration="2262000" />
-      <workItem from="1535160327386" duration="14399000" />
+      <workItem from="1535160327386" duration="14528000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16661000" />
+    <option name="totallyTimeSpent" value="16790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -369,8 +369,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workerman/start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+        <state relative-caret-position="186">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
           <folding>
             <element signature="e#95#116#0#PHP" expanded="true" />
           </folding>
