@@ -21,15 +21,15 @@ define(['base', 'md5'], function(base, md5){
         // 创建websocket
         var ws = new WebSocket('ws://192.168.17.128:2000');
 
-        ws.onOpen = function(){
-            console.log('连接上了');
-            timer();
+        ws.onopen = function(event){
+            console.log(event);
+            timer;
         };
 
         // 0001{"number":1234, "data":"{a:b}", "sign":"abcded"}
 
-        ws.onMessage = function(data){
-            console.log(data);
+        ws.onmessage = function(data){
+            console.log(data.data);
             // data = data.slice(0, 5);
             // data = JSON.parse(data); // {"action":1234, "data":"{a:b}", "sign":"abcded"}
             // var number = data.action;
@@ -43,8 +43,8 @@ define(['base', 'md5'], function(base, md5){
             // }
         };
 
-        ws.onError = function(){
-            console.log('链接发生异常');
+        ws.onerror = function(event){
+            console.log(event+'错误了');
         };
 
 
@@ -69,6 +69,7 @@ define(['base', 'md5'], function(base, md5){
         var sign = hex_md5(data+base.key);
 
         sendData.sign = sign;
+        sendData = JSON.stringify(sendData);
 
        ws.send(sendData+'_^+^_');
 
