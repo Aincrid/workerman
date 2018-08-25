@@ -38,11 +38,11 @@ $wsWorker -> onConnect = function($connection){
 };
 
 $wsWorker -> onMessage = function($connection, $data){
-    $connection->lastMessageTime = time();
+//    $connection->lastMessageTime = time();
 
-    $res = HandleMessage::getData($data);
+//    $res = HandleMessage::getData($data);
 
-    $connection -> send($res);
+    $connection -> send('你好');
 };
 
 $wsWorker -> onClose = function($connection){
