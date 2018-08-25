@@ -54,7 +54,8 @@ class HandleMessage
 
         $data = $newData['data']; // 数据
 
-
+        echo $namespace.'\\'.$class->$action;
+        exit;
         $data = $namespace.'\\'.$class -> $action($data); // {"data"=>"asdfc"}
 
         return self::packData($actionNumber, $data);
