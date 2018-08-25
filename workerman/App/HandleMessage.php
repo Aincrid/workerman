@@ -20,6 +20,9 @@ class HandleMessage
     public static function getData($data){
         $data = explode('_^+^_', $data);
         foreach($data as $val){
+            if(!$val){
+                continue;
+            }
             self::handleMessage($val);
         }
     }
