@@ -43,8 +43,7 @@ $wsWorker -> onMessage = function($connection, $data){
     $connection->lastMessageTime = time();
     echo 'client:'.$data."\n";
     $res = HandleMessage::getData($data);
-    echo $res;
-    exit;
+    echo 'server:'.$res."\n";
     $connection -> send($res);
 };
 
