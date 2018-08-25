@@ -46,12 +46,14 @@ define(['base', 'md5'], function(base, md5){
         ws.onerror = function(event){
             console.log(event+'错误了');
         };
-
+        ws.onclose = function(event){
+            console.log(event);
+        };
 
         // 心跳
         var timer = setInterval(function(){
             console.log(1);
-            socketSend(0, "", ws)
+            socketSend(0, "1", ws);
         }, 1000);
 
     };
