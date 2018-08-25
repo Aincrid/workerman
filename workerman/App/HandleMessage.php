@@ -37,10 +37,10 @@ class HandleMessage
         $namespace = 'workerman\App';
 
 
-        $data = json_decode($data, true);
-        $actionNumber = $data['action']; // 协议号
+        $newData = json_decode($data, true);
+        $actionNumber = $newData['action']; // 协议号
         echo $actionNumber;
-        $sign = $data['sign'];
+        $sign = $newData['sign'];
 
         // 验签
         if (self::verifySign($sign, $data)) {
