@@ -19,7 +19,9 @@ class HandleMessage
      */
     public static function getData($data){
         $data = explode('_^+^_', $data);
-        return self::handleMessage($data);
+        foreach($data as $val){
+            self::handleMessage($val);
+        }
     }
 
 
