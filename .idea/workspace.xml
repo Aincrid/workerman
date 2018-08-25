@@ -56,8 +56,8 @@
       <file leaf-file-name="HandleMessage.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/workerman/App/HandleMessage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+            <state relative-caret-position="271">
+              <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -205,12 +205,12 @@
       <option name="presentableId" value="Default" />
       <updated>1535158038973</updated>
       <workItem from="1535158040460" duration="2262000" />
-      <workItem from="1535160327386" duration="16161000" />
+      <workItem from="1535160327386" duration="16279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18423000" />
+    <option name="totallyTimeSpent" value="18541000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -379,8 +379,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/workerman/App/HandleMessage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
+        <state relative-caret-position="271">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
         </state>
       </provider>
     </entry>
