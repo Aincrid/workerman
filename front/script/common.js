@@ -8,11 +8,13 @@ define(function(){
         console.log(data);
     };
 
+    var key = 'ceshiworkerman';
 
 
 
 
     return {
-        'pack':pack
+        'pack':pack,
+        'idx': key
     }
 });

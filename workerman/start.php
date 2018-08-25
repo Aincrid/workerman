@@ -5,6 +5,7 @@ use Workerman\Worker;
 use Workerman\App\HandleMessage;
 use Workerman\Config;
 use Workerman\Lib\Timer;
+use Workerman\Common;
 
 $wsWorker = new Worker('websocket://0.0.0.0:2000');
 
@@ -33,20 +34,21 @@ $wsWorker -> onWorkerStart = function($wsWorker){
 
 $wsWorker -> onConnect = function($connection){
 
-    echo $connection -> count.'登陆';
+    echo '登陆';
 
 };
 
 $wsWorker -> onMessage = function($connection, $data){
-//    $connection->lastMessageTime = time();
+    $connection->lastMessageTime = time();
 
-//    $res = HandleMessage::getData($data);
+    Common::dump($data);
+    $res = HandleMessage::getData($data);
 
-    $connection -> send('你好');
+    $connection -> send($res);
 };
 
 $wsWorker -> onClose = function($connection){
-    echo '连接已断开';
+    echo '链接已断开';
 };
 
 Worker::runAll();

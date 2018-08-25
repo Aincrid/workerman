@@ -11,7 +11,8 @@ namespace Workerman;
 
 class Common
 {
-    public function sendToByte($data){
-
+    public static function dump($data){
+        echo '</pre>';
+        var_dump($data);
     }
 }
