@@ -52,7 +52,7 @@ class HandleMessage
         $class = $actionData[0];
         $action = $actionData[1];
 
-        $data = $data['data']; // 数据
+        $data = $newData['data']; // 数据
 
 
         $data = $namespace.'\\'.$class -> $action($data); // {"data"=>"asdfc"}
