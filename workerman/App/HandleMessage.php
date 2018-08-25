@@ -39,7 +39,7 @@ class HandleMessage
 
         $newData = json_decode($data, true);
         $actionNumber = $newData['action']; // 协议号
-        echo $actionNumber;
+
         $sign = $newData['sign'];
 
         // 验签
@@ -55,10 +55,10 @@ class HandleMessage
         $data = $newData['data']; // 数据
 
         $class = $namespace.'\\'.$class;
-        echo $class;
         $data = $class::$action($data); // {"data"=>"asdfc"}
 
-        return self::packData($actionNumber, $data);
+        echo  self::packData($actionNumber, $data);
+        exit;
 
     }
 
