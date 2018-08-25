@@ -53,7 +53,7 @@ define(['base', 'md5'], function(base, md5){
         // 心跳
         var timer = setInterval(function(){
             console.log(1);
-            socketSend(0, "1", ws);
+            socketSend(0, "1010", ws);
         }, 1000);
 
     };

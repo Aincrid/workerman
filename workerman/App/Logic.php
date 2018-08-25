@@ -19,6 +19,6 @@ class Logic
      */
     public static function heartBeat(){
         echo 'heartBeat';
-        return json_encode(array('data'=>''));
+        return json_encode(array('data'=>'1010'));
     }
 }

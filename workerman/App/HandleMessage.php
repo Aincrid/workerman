@@ -54,7 +54,6 @@ class HandleMessage
 
         $data = $newData['data']; // 数据
 
-        dump($data."\n");
         $class = $namespace.'\\'.$class;
         echo $class;
         $data = $class::$action($data); // {"data"=>"asdfc"}
