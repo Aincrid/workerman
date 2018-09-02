@@ -22,6 +22,7 @@ const Websocket = function(){
         // 验签
         let dataSign = data.sign;
         if (checkSign(data.data, dataSign)) {
+            console.log(data);
             data = JSON.parse(data.data);
             console.log(data);
         } else {
