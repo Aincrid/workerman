@@ -68,8 +68,8 @@
       <file leaf-file-name="HandleMessage.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/workerman/App/HandleMessage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+            <state relative-caret-position="221">
+              <caret line="50" column="85" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -288,12 +288,12 @@
       <workItem from="1535721100275" duration="2312000" />
       <workItem from="1535724253433" duration="7968000" />
       <workItem from="1535808425733" duration="6894000" />
-      <workItem from="1535846709463" duration="8540000" />
+      <workItem from="1535846709463" duration="8785000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60064000" />
+    <option name="totallyTimeSpent" value="60309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -601,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/src/websocket/socketsend.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -618,13 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/workerman/App/Logic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/src/components/Login.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -632,10 +618,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/workerman/App/Logic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/workerman/App/HandleMessage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="50" column="49" selection-start-line="50" selection-start-column="49" selection-end-line="50" selection-end-column="49" />
+        <state relative-caret-position="221">
+          <caret line="50" column="85" selection-start-line="50" selection-start-column="85" selection-end-line="50" selection-end-column="85" />
         </state>
       </provider>
     </entry>
