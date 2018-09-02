@@ -45,10 +45,10 @@ class HandleMessage
 
         // 验签
         if (self::verifySign($sign, $data)) {
-            return self::packData(array('action'=>$actionNumber, 'data'=>'验签失败'));
+            return self::packData($actionNumber, array('data'=>'验签失败'));
         }
         if(! isset((self::$number)[$actionNumber])){
-            return self::packData(array('action'=>$actionNumber, 'data'=>'协议号错误'));
+            return self::packData($actionNumber, array('data'=>'协议号错误'));
         }
         $actionData = (self::$number)[$actionNumber];
 
