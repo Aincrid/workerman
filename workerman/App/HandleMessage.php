@@ -11,7 +11,8 @@ use Workerman\Config;
 class HandleMessage
 {
     private static $number = array(
-        '0' => 'Logic/heartBeat'
+        0 => 'Logic/heartBeat',
+        1 => 'Logic/login'
     );
 
     /**
@@ -49,6 +50,9 @@ class HandleMessage
         $actionData = (self::$number)[$actionNumber];
 
         $actionData = explode('/', $actionData);
+        if(! isset($actionData)){
+            return self::packData(array('action'=>$actionNumber, 'data'=>'协议号错误'));
+        }
         $class = $actionData[0];
         $action = $actionData[1];
 

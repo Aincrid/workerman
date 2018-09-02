@@ -21,4 +21,12 @@ class Logic
         echo 'heartBeat';
         return json_encode(array('data'=>'1010'));
     }
+
+    /**
+     *  登陆
+     * @return string
+     */
+    public static function login(){
+        return json_encode(array('data'=>'login'));
+    }
 }
