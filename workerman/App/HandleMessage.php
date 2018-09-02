@@ -47,12 +47,13 @@ class HandleMessage
         if (self::verifySign($sign, $data)) {
             return self::packData(array('action'=>$actionNumber, 'data'=>'验签失败'));
         }
+        if(! isset((self::$number)[$actionNumber])){
+            return self::packData(array('action'=>$actionNumber, 'data'=>'协议号错误'));
+        }
         $actionData = (self::$number)[$actionNumber];
 
         $actionData = explode('/', $actionData);
-        if(! isset($actionData)){
-            return self::packData(array('action'=>$actionNumber, 'data'=>'协议号错误'));
-        }
+
         $class = $actionData[0];
         $action = $actionData[1];
 

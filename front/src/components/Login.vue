@@ -31,7 +31,7 @@
         },
         methods : {
             submitForm:function () {
-                socketsend(1, {username:this.username, password:this.password})
+                socketsend(2, {username:this.username, password:this.password})
             }
         }
     }
